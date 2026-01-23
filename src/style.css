@@ -341,6 +341,22 @@ footer h3 {
 @media (max-width: 768px) {
     .experience-header {
         flex-direction: column;
-        align-items: flex-start;
     }
+}
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: var(--font-body);
+}
+
+.lang-btn:hover {
+    background: var(--primary-color);
+    color: white;
 }

@@ -12,30 +12,31 @@
     <nav>
       <div class="logo">HEEA_Data_Solutions</div>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#extracurricular">Extracurriculars</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#certifications" data-i18n="nav_certifications">Certifications</a></li>
+        <li><a href="#extracurricular" data-i18n="nav_extracurriculars">Extracurriculars</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li><button id="lang-toggle" class="lang-btn">ES</button></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Hugo Enrique Espronceda Anaya</h1>
-      <h2>Data Analyst / Data Scientist</h2>
-      <p>Turning complex data into clear, actionable insights.</p>
-      <a href="#projects" class="cta-button">View Work</a>
+      <h1 data-i18n="hero_name">Hugo Enrique Espronceda Anaya</h1>
+      <h2 data-i18n="hero_role">Data Analyst / Data Scientist</h2>
+      <p data-i18n="hero_desc">Turning complex data into clear, actionable insights.</p>
+      <a href="#projects" class="cta-button" data-i18n="hero_cta">View Work</a>
     </div>
   </section>
 
   <main>
     <section id="about" class="reveal">
       <div class="container">
-        <h3>About Me</h3>
-        <p>
+        <h3 data-i18n="about_title">About Me</h3>
+        <p data-i18n="about_desc">
           Hello! I am a passionate Data Analyst with a strong background in interpreting complex datasets.
           I specialize in transforming raw data into meaningful stories that drive business decisions.
           My toolkit includes SQL, Python, Tableau, and PowerBI.
@@ -45,16 +46,16 @@
 
     <section id="experience" class="reveal">
       <div class="container">
-        <h3>Experience</h3>
+        <h3 data-i18n="experience_title">Experience</h3>
         <div class="experience-list">
           <!-- Placeholder Experience -->
           <div class="experience-item">
             <div class="experience-header">
-              <h4>Marketing Intern</h4>
-              <span class="experience-date">Apr. 2024 - Jan. 2025</span>
+              <h4 data-i18n="exp_1_title">Marketing Intern</h4>
+              <span class="experience-date" data-i18n="exp_1_date">Apr. 2024 - Jan. 2025</span>
             </div>
-            <p class="company-name">Grupo Alzac / Villarreal División Equipos</p>
-            <p>
+            <p class="company-name" data-i18n="exp_1_company">Grupo Alzac / Villarreal División Equipos</p>
+            <p data-i18n="exp_1_desc">
               ● Designed and maintained Power BI and Tableau reports for data analysis and visualization. <br>
               ● Conducted market research, correlation analysis, and customer segmentation to drive strategic
               decision-making. <br>
@@ -69,12 +70,13 @@
 
     <section id="projects" class="reveal">
       <div class="container">
-        <h3>Projects</h3>
+        <h3 data-i18n="projects_title">Projects</h3>
         <div class="project-grid">
           <!-- Placeholder Project 1 -->
           <article class="project-card reveal">
-            <h4>Semantic and Trend Analysis of Annual Reports of Amazon</h4>
-            <p>Text extraction and sentiment analysis to extract key information and trends from Amazon's annual reports
+            <h4 data-i18n="proj_1_title">Semantic and Trend Analysis of Annual Reports of Amazon</h4>
+            <p data-i18n="proj_1_desc">Text extraction and sentiment analysis to extract key information and trends from
+              Amazon's annual reports
               according to their milestones.</p>
             <div class="tags">
               <span>Python</span>
@@ -83,14 +85,15 @@
               <span>Google Colab</span>
               <span>Spanish</span>
             </div>
-            <a href="https://colab.research.google.com/drive/1SCM0yqVFYwtEhdcobig6kFm14Ty857sY"
-              class="project-link">View Project</a>
+            <a href="https://colab.research.google.com/drive/1SCM0yqVFYwtEhdcobig6kFm14Ty857sY" class="project-link"
+              data-i18n="proj_1_link">View Project</a>
           </article>
 
           <!-- Placeholder Project 2 -->
           <article class="project-card reveal">
-            <h4>Segmentation by clusters and prediction models in e-commerce</h4>
-            <p>Machine learning model to identify customer segments and predict their behavior using historical usage
+            <h4 data-i18n="proj_2_title">Segmentation by clusters and prediction models in e-commerce</h4>
+            <p data-i18n="proj_2_desc">Machine learning model to identify customer segments and predict their behavior
+              using historical usage
               data.</p>
             <div class="tags">
               <span>Python</span>
@@ -99,13 +102,13 @@
               <span>Teamwork</span>
             </div>
             <a href="https://drive.google.com/file/d/17Z0ejjX5DKRFcBkyNwkTvEhrJwHG0qYK/view?usp=sharing"
-              class="project-link">View Project</a>
+              class="project-link" data-i18n="proj_2_link">View Project</a>
           </article>
 
           <!-- Placeholder Project 3 -->
           <article class="project-card reveal">
-            <h4>My work in R</h4>
-            <p>All of the projects I have done in my profile of RPubs</p>
+            <h4 data-i18n="proj_3_title">My work in R</h4>
+            <p data-i18n="proj_3_desc">All of the projects I have done in my profile of RPubs</p>
             <div class="tags">
               <span>R</span>
               <span>RPubs</span>
@@ -114,26 +117,27 @@
               <span>Time Series</span>
               <span>Machine Learning</span>
             </div>
-            <a href="https://rpubs.com/hugo_enrique" class="project-link">View Project</a>
+            <a href="https://rpubs.com/hugo_enrique" class="project-link" data-i18n="proj_3_link">View Project</a>
           </article>
 
           <!-- Placeholder Project 4 -->
           <article class="project-card reveal">
-            <h4>Analyzing students' mental health</h4>
-            <p>Analysis of the mental health of international students in Japan</p>
+            <h4 data-i18n="proj_4_title">Analyzing students' mental health</h4>
+            <p data-i18n="proj_4_desc">Analysis of the mental health of international students in Japan</p>
             <div class="tags">
               <span>Datacamp</span>
               <span>SQL</span>
               <span>PostgreSQL</span>
             </div>
-            <a href="https://www.datacamp.com/datalab/w/c5f00726-bd8a-47a8-a114-20d239b8375f/edit"
-              class="project-link">View Project</a>
+            <a href="https://www.datacamp.com/datalab/w/c5f00726-bd8a-47a8-a114-20d239b8375f/edit" class="project-link"
+              data-i18n="proj_4_link">View Project</a>
           </article>
 
           <!-- Placeholder Project 5 -->
           <article class="project-card reveal">
-            <h4>Credit Card Approval</h4>
-            <p>Analysis of the approval of credit cards with different models to select the best one</p>
+            <h4 data-i18n="proj_5_title">Credit Card Approval</h4>
+            <p data-i18n="proj_5_desc">Analysis of the approval of credit cards with different models to select the best
+              one</p>
             <div class="tags">
               <span>Datacamp</span>
               <span>Python</span>
@@ -142,14 +146,15 @@
               <span>Pandas</span>
               <span>Numpy</span>
             </div>
-            <a href="https://www.datacamp.com/datalab/w/26ec1af5-ef39-4e51-a336-c3057a2b59de/edit"
-              class="project-link">View Project</a>
+            <a href="https://www.datacamp.com/datalab/w/26ec1af5-ef39-4e51-a336-c3057a2b59de/edit" class="project-link"
+              data-i18n="proj_5_link">View Project</a>
           </article>
 
           <!-- Placeholder Project 6 -->
           <article class="project-card reveal">
-            <h4>Las Palomas</h4>
-            <p>We did a looker dashboard for a hotel and with the information we did 2 webpages to improve the hotel's
+            <h4 data-i18n="proj_6_title">Las Palomas</h4>
+            <p data-i18n="proj_6_desc">We did a looker dashboard for a hotel and with the information we did 2 webpages
+              to improve the hotel's
               long wait times</p>
             <div class="tags">
               <span>Looker</span>
@@ -158,16 +163,19 @@
               <span>Webpages</span>
             </div>
             <a href="https://lookerstudio.google.com/reporting/607ae6e1-7e25-4028-a88d-9372a83b06b6"
-              class="project-link">Dashboard</a>
-            <a href="https://palomas-checkin-kiosk.lovable.app" class="project-link">Check-in Kiosk MVP</a>
-            <a href="https://palomas-pre-checkin-flow.lovable.app" class="project-link">Online Booking (Pre-checkin)
+              class="project-link" data-i18n="proj_6_link_1">Dashboard</a>
+            <a href="https://palomas-checkin-kiosk.lovable.app" class="project-link" data-i18n="proj_6_link_2">Check-in
+              Kiosk MVP</a>
+            <a href="https://palomas-pre-checkin-flow.lovable.app" class="project-link" data-i18n="proj_6_link_3">Online
+              Booking (Pre-checkin)
               MVP</a>
           </article>
 
           <!-- Placeholder Project 7 -->
           <article class="project-card reveal">
-            <h4>Data Architecture</h4>
-            <p>In team we did a full data architecture that ended up in a dashboard in databricks</p>
+            <h4 data-i18n="proj_7_title">Data Architecture</h4>
+            <p data-i18n="proj_7_desc">In team we did a full data architecture that ended up in a dashboard in
+              databricks</p>
             <div class="tags">
               <span>Teamwork</span>
               <span>Databricks</span>
@@ -179,13 +187,14 @@
               <span>ETL</span>
             </div>
             <a href="https://drive.google.com/file/d/1vvC4l1S3TeMzzpNK0_f5RZgPrlcqM3zW/view?usp=sharing"
-              class="project-link">View Project</a>
+              class="project-link" data-i18n="proj_7_link">View Project</a>
           </article>
 
           <!-- Placeholder Project 8 -->
           <article class="project-card reveal">
-            <h4>Finance Dashboard about Mexican Banking System</h4>
-            <p> We analyzed different datasets about the Mexican banking system and created a dashboard in PowerBI with
+            <h4 data-i18n="proj_8_title">Finance Dashboard about Mexican Banking System</h4>
+            <p data-i18n="proj_8_desc"> We analyzed different datasets about the Mexican banking system and created a
+              dashboard in PowerBI with
               different scenarios and projections</p>
             <div class="tags">
               <span>PowerBI</span>
@@ -196,7 +205,7 @@
               <span>Dashboard</span>
             </div>
             <a href="https://drive.google.com/file/d/1H4I9na_fmRmbApohN5gGRyR7v7aQIEPN/view?usp=sharing"
-              class="project-link"></a>
+              class="project-link" data-i18n="proj_8_link">View Project</a>
           </article>
         </div>
       </div>
@@ -204,43 +213,43 @@
 
     <section id="certifications" class="reveal">
       <div class="container">
-        <h3>Certifications</h3>
+        <h3 data-i18n="certifications_title">Certifications</h3>
         <ul class="cert-list">
           <li>
             <span class="cert-name"><a
                 href="https://drive.google.com/file/d/1SXBn--EpRMk7tJD4A8WcbW3I3Z03bksG/view?usp=sharing"
-                target="_blank">AI Engineering for Data Scientists Associate</a></span>
-            <span class="cert-source">Datacamp (2025)</span>
+                target="_blank" data-i18n="cert_1_name">AI Engineering for Data Scientists Associate</a></span>
+            <span class="cert-source" data-i18n="cert_1_source">Datacamp (2025)</span>
           </li>
           <li>
             <span class="cert-name"><a
                 href="https://drive.google.com/file/d/10Ohk4Mj5m_JtFr6pPIyCYOxOu08h8_6T/view?usp=drive_link"
-                target="_blank">AWS Cloud Practitioner</a></span>
-            <span class="cert-source">Datacamp (2025)</span>
+                target="_blank" data-i18n="cert_2_name">AWS Cloud Practitioner</a></span>
+            <span class="cert-source" data-i18n="cert_2_source">Datacamp (2025)</span>
           </li>
           <li>
             <span class="cert-name"><a
                 href="https://drive.google.com/file/d/1R6xB7OHBiWwlWEJw6_ZxOTJ2K9sVUt-7/view?usp=drive_link"
-                target="_blank">Duolingo English Test Certificate (C1)</a></span>
-            <span class="cert-source">Duolingo (2025)</span>
+                target="_blank" data-i18n="cert_3_name">Duolingo English Test Certificate (C1)</a></span>
+            <span class="cert-source" data-i18n="cert_3_source">Duolingo (2025)</span>
           </li>
           <li>
             <span class="cert-name"><a
                 href="https://drive.google.com/file/d/1sVKobsPlEE90FHZmVmi0MjvkEy8vW11J/view?usp=sharing"
-                target="_blank">Scientific Computing with Python </a></span>
-            <span class="cert-source">FreeCodeCamp (2024)</span>
+                target="_blank" data-i18n="cert_4_name">Scientific Computing with Python </a></span>
+            <span class="cert-source" data-i18n="cert_4_source">FreeCodeCamp (2024)</span>
           </li>
           <li>
             <span class="cert-name"><a
                 href="https://drive.google.com/file/d/1BFQz8hYPi3AxsqV_CZVzXDCQF-8vDMCZ/view?usp=drive_link"
-                target="_blank">AI Fundamentals</a></span>
-            <span class="cert-source">Datacamp (2024)</span>
+                target="_blank" data-i18n="cert_5_name">AI Fundamentals</a></span>
+            <span class="cert-source" data-i18n="cert_5_source">Datacamp (2024)</span>
           </li>
           <li>
             <span class="cert-name"><a
                 href="https://drive.google.com/file/d/1WmfU_OXyfcSdz2_EZOMADy4tfWcBg54b/view?usp=drive_link"
-                target="_blank">Responsive Web Design</a></span>
-            <span class="cert-source">FreeCodeCamp (2022)</span>
+                target="_blank" data-i18n="cert_6_name">Responsive Web Design</a></span>
+            <span class="cert-source" data-i18n="cert_6_source">FreeCodeCamp (2022)</span>
           </li>
         </ul>
       </div>
@@ -248,11 +257,12 @@
 
     <section id="extracurricular" class="reveal">
       <div class="container">
-        <h3>Extracurriculars</h3>
+        <h3 data-i18n="extracurricular_title">Extracurriculars</h3>
         <ul class="cert-list">
           <li>
-            <span class="cert-name">Soccer/Football Coach</span>
-            <span class="cert-source">Coach for 8-year-olds in Tarragona, Spain (Oct 2023 - Jun 2024)</span>
+            <span class="cert-name" data-i18n="extra_1_name">Soccer/Football Coach</span>
+            <span class="cert-source" data-i18n="extra_1_source">Coach for 8-year-olds in Tarragona, Spain (Oct 2023 -
+              Jun 2024)</span>
           </li>
         </ul>
       </div>
@@ -261,8 +271,8 @@
 
   <footer id="contact">
     <div class="container">
-      <h3>Contact Me</h3>
-      <p>Let's connect and discuss data!</p>
+      <h3 data-i18n="contact_title">Contact Me</h3>
+      <p data-i18n="contact_desc">Let's connect and discuss data!</p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/hugo-enrique-espronceda-anaya/">LinkedIn</a>
         <a href="mailto:hugo.enrique.espronceda.anaya@gmail.com">Email</a>
